@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #000;
+}
+
+/*Navigation bar*/
+nav {
+    background-color: #117c61;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+    font-size: 1.5rem;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 50%; 
+    bottom: -2px;
+    width: 0;
+    height: 3px;
+    background-color: #000000;
+    transition: width 0.3s ease;
+    transform: translateX(-50%); 
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    font-size: 1.2rem;
+    justify-content: center; 
+    flex-basis: 100%; 
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.5s ease;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+/*Image Container*/
+.image-info {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+/*My Name*/
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+h5 {
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; 
+        align-items: center;  
+    }
+
+    .nav-links {
+        flex-direction: column; 
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .nav-links li {
+        margin: 10px 0; 
+    }
+
+    nav a {
+        margin: 10px 0; 
+    }
+}
+
+/* Responsive adjustments for smaller screen */
+@media (max-width: 480px) { 
+    .nav-links {
+        font-size: 1rem;
+    }
+
+    .image-info {
+        padding: 1rem; 
+    }
+
+    .profile-image {
+        width: 150px; 
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    h5 {
+        font-size: 1.2rem; 
+    }
+}
