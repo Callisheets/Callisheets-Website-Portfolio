@@ -17,7 +17,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: auto;
+    width: 100%;
 }
 
 nav a {
@@ -103,26 +103,36 @@ h5 {
     nav {
         flex-direction: column; 
         align-items: center;  
+        padding:0.5rem
     }
 
     .nav-links {
         flex-direction: column; 
         text-align: center;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
+        width: 100%;
     }
 
     .nav-links li {
-        margin: 10px 0; 
+        margin: 5px 0; 
+        width: 100%;
     }
 
     nav a {
-        margin: 10px 0; 
+        margin: 5px 0; 
+        font-size: 1.2rem;
+        display: block;
+        width: 100%;
     }
 }
 
 /* Responsive adjustments for smaller screen */
 @media (max-width: 480px) { 
     .nav-links {
+        font-size: 1rem;
+    }
+
+    .nav a {
         font-size: 1rem;
     }
 
