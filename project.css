@@ -134,7 +134,7 @@ nav a:hover::after {
         font-size: 1rem; 
     }
 
-    .card {
+    .project-container {
         padding: 15px; 
     }
 }
