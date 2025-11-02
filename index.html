@@ -9,215 +9,173 @@
 </head>
 
 <body>
+    <div class="bg-animation"></div>
+
     <!-- Navigation -->
-    <header id="header">
-        <div class="container">
-            <nav>
-                <div class="logo">CalliSheets</div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
+    <nav id="nav">
+        <div class="logo">CalliSheets</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </header>
+    </nav>
 
-    <!-- Contents -->
-    <main>
-        <!-- About Section -->
-        <section id="about">
-            <div class="container">
-                <h2 class="title">About Me</h2>
-                <div class="about-content">
-                    <div class="about-image">
-                        <img src="profile image/chrystal.jpg" alt="Developer Profile Image">
-                    </div>
-                    <div class="about-text">
-                        <h3>Chrystal Fucio</h3>
-                        <p> I'm a passionate IT professional, designer, developer, and Digital <a class="art-link" href="art.html"> Artist </a>.
-                            I've cultivated
-                            a diverse skillset ranging from front-end website development
-                            to foundational back-end knowledge.</p>
-                        <p> A multi-faceted creator at the intersection of technology and art.
-                            Let's explore the projects I've built.</p>
-                    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Chrystal Fucio</h1>
+            <p>Developer • Designer • Digital Artist</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="profile image/chrystal.jpg" alt="Chrystal Fucio"
+                    onerror="this.src='https://via.placeholder.com/400x400/4e2121/ffffff?text=CF'">
+            </div>
+            <div class="about-text">
+                <h3>Hi, I'm Chrystal 👋</h3>
+                <p>I'm a passionate IT professional, designer, developer, and <a class="art-link"
+                        href="art.html">Digital Artist</a>. I've cultivated a diverse skillset ranging from front-end
+                    website development to foundational back-end knowledge.</p>
+                <p>A multi-faceted creator at the intersection of technology and art. I love building beautiful,
+                    functional experiences that make a difference. Let's explore the projects I've built.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Projects Image/Aralista.png" alt="Aralista"
+                        onerror="this.src='https://via.placeholder.com/400x250/4e2121/ffffff?text=Aralista'">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Aralista</h3>
+                    <p>Personalized Study Planner web application. The purpose of this application is to help students
+                        organize their study schedules and improve their study habits by creating personalized study
+                        plans.</p>
                 </div>
             </div>
-        </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <div class="container">
-                <h2 class="title">My Projects</h2>
-                <div class="projects-container">
-                    
-                    <!-- Project 1 -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="Projects Image/Aralista.png" alt="Aralista">
-                        </div>
-                        <div class="project-info">
-                            <h3>Aralista</h3>
-                            <p> Personalized Study Planner web application. The purpose of this application is to
-                                help students organize their study schedules and improve their study habits by
-                                creating personalized study plans.</p>
-                            <div class="tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">Node.js</span>
-                                <span class="tag">MongoDB</span>
-                                <span class="tag">Stripe API</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/Callisheets/studyplanner" class="project-btn">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="Projects Image/PMHJ HomePage.jpg" alt="Personal Mental Health Journal">
-                        </div>
-                        <div class="project-info">
-                            <h3>Personal Mental Health Journal</h3>
-                            <p> This journal is a guide to understanding and improving mental well-being.
-                                By reflecting on thoughts and feelings, It can identify patterns, develop
-                                coping strategies, and build resilience.</p>
-                            <div class="tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">Hack</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">PHP</span>
-                                <span class="tag">XAMPP</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="Projects Image/Research Collection.png" alt="Research Collection">
-                        </div>
-                        <div class="project-info">
-                            <h3>Research Collection</h3>
-                            <p> A simple collection of research papers of PDF Documents, putting a
-                                navigation bar for four kinds of research papers, Computer Science,
-                                Medical Research, Astrophysics, Engineering, and Genomics for more easy searching
-                                for the users.</p>
-                            <div class="tags">
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">HTML</span>
-                            </div>
-                            <div class="project-links">
-                                <div class="project-links">
-                                    <a href="https://github.com/Callisheets/Research-Collection"
-                                        class="project-btn">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 4 -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="Projects Image/Interactive Human Anatomy.png" alt="Interactive Human Anatomy">
-                        </div>
-                        <div class="project-info">
-                            <h3>Interactive Human Anatomy</h3>
-                            <p> Anaphy E-Learning is a web-based platform designed to provide an interactive 
-                                and comprehensive learning experience for students studying Anatomy and Physiology. 
-                                This platform is part of our capstone project and aims to combine engaging content with an 
-                                intuitive interface to make complex subjects more accessible.</p>
-                            <div class="tags">
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">Node.js</span>
-                                <span class="tag">MongoDB</span>
-                                <span class="tag">Docker</span>
-                            </div>
-                            <div class="project-links">
-                                <div class="project-links">
-                                    <a href="https://www.anaphyverse.site/" 
-                                        class="project-btn">Live Demo</a>
-                                    <a href="https://github.com/s3lftitled/anaphy-e-learning"
-                                        class="project-btn">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Projects Image/PMHJ HomePage.jpg" alt="Personal Mental Health Journal"
+                        onerror="this.src='https://via.placeholder.com/400x250/4e2121/ffffff?text=PMHJ'">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Personal Mental Health Journal</h3>
+                    <p>This journal is a guide to understanding and improving mental well-being. By reflecting on
+                        thoughts and feelings, It can identify patterns, develop coping strategies, and build
+                        resilience.</p>
                 </div>
             </div>
-            <h1>More Projects to Come...</h1>
-        </section>
 
-        <!-- Contact -->
-        <section id="contact">
-            <div class="container">
-                <h2 class="title">Contact me</h2>
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon">✉️</div>
-                            <div class="contact-text">
-                                <h3>Email</h3>
-                                <a>fuciocal@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">☎︎</div>
-                            <div class="contact-text">
-                                <h3>Phone</h3>
-                                <p>+63 70 794 5941</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"> ⟟ </div>
-                            <div class="contact-text">
-                                <h3>Location</h3>
-                                <p>Pangasinan, Villasis</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">🕒</div>
-                            <div class="contact-text">
-                                <h3>Availability</h3>
-                                <p>None</p>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Projects Image/Research Collection.png" alt="Research Collection"
+                        onerror="this.src='https://via.placeholder.com/400x250/4e2121/ffffff?text=Research'">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Research Collection</h3>
+                    <p>A simple collection of research papers of PDF Documents, putting a navigation bar for four kinds
+                        of research papers, Computer Science, Medical Research, Astrophysics, Engineering, and Genomics
+                        for more easy searching for the users.</p>
                 </div>
             </div>
-        </section>
-    </main>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Projects Image/Interactive Human Anatomy.png" alt="Interactive Human Anatomy"
+                        onerror="this.src='https://via.placeholder.com/400x250/4e2121/ffffff?text=Anatomy'">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Interactive Human Anatomy</h3>
+                    <p>An Interactive learning system designed to helps nursing students
+                    visualize human anatomy with a 3d Human Anatomy model along with a test</p>
+                </div>
+            </div>
+
+             <!-- Project 5 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Projects Image/Time Keeping System.png" alt="Time Keeping System"
+                        onerror="this.src='https://via.placeholder.com/400x250/4e2121/ffffff?text=Time+Keeping'">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Time Keeping System</h3>
+                    <p>A System that helps to keep and manage the employees time,
+                        request leave, and information to help the admin to monitor its employees.</p>
+                </div>
+            </div>
+        </div>
+        <div class="more-projects">More Projects to Come...</div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <a href="mailto:fuciocal@gmail.com">fuciocal@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">☎︎</div>
+                    <h3>Phone</h3>
+                    <p>+63 70 794 5941</p>
+                </div>  
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy;2025 Chrystal Fucio | Developer</p>
-            <div class="social-links">
-                <a href="https://github.com/Callisheets"><img src="Icons/github.png"></a>
-                <a href="https://www.instagram.com/_shheet/"><img src="Icons/instagram.png"></a>
-                <a href="https://www.facebook.com/chrystal.fucio/"><img src="Icons/facebook.png"></a>
-
-            </div>
+        <p>&copy; 2025 Chrystal Fucio | Developer & Digital Artist</p>
+        <div class="social-links">
+            <a href="https://github.com/Callisheets" aria-label="GitHub">
+                <img src="Icons/github.png" alt="GitHub" onerror="this.parentElement.innerHTML='GH'">
+            </a>
+            <a href="https://www.instagram.com/_shheet/" aria-label="Instagram">
+                <img src="Icons/instagram.png" alt="Instagram" onerror="this.parentElement.innerHTML='IG'">
+            </a>
+            <a href="https://www.facebook.com/chrystal.fucio/" aria-label="Facebook">
+                <img src="Icons/facebook.png" alt="Facebook" onerror="this.parentElement.innerHTML='FB'">
+            </a>
         </div>
     </footer>
 
     <!-- Scroll Top Button -->
-    <div class="top-scroll">
-        ↑
-    </div>
+    <div class="scroll-top" id="scrollTop">↑</div>
 
     <script src="script.js"></script>
 </body>
 
 </html>
-
-
