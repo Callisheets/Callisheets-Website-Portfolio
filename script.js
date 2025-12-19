@@ -17,17 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
       setTimeout(() => {
         landingPage.style.display = 'none';
-        mainContent.classList.add('show');
-        nav.classList.add('show');
+        if (mainContent) mainContent.classList.add('show');
+        if (nav) nav.classList.add('show');
       }, 1000);
     });
   }
-
-  document.querySelectorAll('a[href^="index.html"], a[href^="Project"]').forEach(link => {
-    link.addEventListener('click', () => {
-      sessionStorage.setItem('internalNavigation', 'true');
-    });
-  });
 
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
