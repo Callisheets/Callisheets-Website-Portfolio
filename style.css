@@ -762,7 +762,6 @@ nav.show {
   }
 
   .skills {
-    /* Centers the skill tags */
     justify-content: center;
   }
 }
@@ -886,3 +885,4 @@ nav.show {
     font-size: 4rem;
   }
 }
+
