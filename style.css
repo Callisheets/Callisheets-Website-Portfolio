@@ -739,7 +739,8 @@ nav.show {
   .about {
     padding: 60px 20px;
   }
-   .nav-links {
+
+  .nav-links {
     display: none;
   }
 
@@ -983,15 +984,17 @@ nav.show {
   .hero-text h1 {
     font-size: 4rem;
   }
-  .nav-links a { 
-    font-size: 1.4rem; 
+
+  .nav-links a {
+    font-size: 1.4rem;
   }
 }
 
 @media (min-width: 2560px) {
-  .hero-content, 
-  .about-container, 
-  .projects-container, 
+
+  .hero-content,
+  .about-container,
+  .projects-container,
   .contact-container {
     max-width: 2000px;
   }
@@ -1004,80 +1007,173 @@ nav.show {
   nav {
     padding: 40px 100px;
   }
-  .logo { 
-    font-size: 2.5rem; 
+
+  .logo {
+    font-size: 2.5rem;
   }
 
-  .nav-links { 
-    gap: 60px; 
+  .nav-links {
+    gap: 60px;
   }
 
-  .nav-links a { 
-    font-size: 2rem; 
+  .nav-links a {
+    font-size: 2rem;
   }
 
   .hero-text h1 {
     font-size: 8rem;
   }
+
   .hero-text h3 {
     font-size: 2.5rem;
     padding-left: 60px;
   }
+
   .hero-text p {
     font-size: 1.8rem;
     max-width: 900px;
   }
+
   .btn {
     padding: 25px 60px;
     font-size: 1.4rem;
   }
 
-  .hero-visual { height: 700px; }
+  .hero-visual {
+    height: 700px;
+  }
+
   .visual-card {
     width: 450px;
     height: 280px;
     padding: 50px;
   }
-  .visual-card-1 { left: -50px; top: -50px; }
-  .visual-card-2 { right: -50px; top: 150px; }
-  .visual-card-3 { left: -10px; bottom: 40px; }
-  .card-icon { width: 80px; height: 80px; font-size: 2rem; }
-  .card-title { font-size: 1.8rem; }
-  .card-subtitle { font-size: 1.3rem; }
 
-  .about { padding: 200px 100px; }
+  .visual-card-1 {
+    left: -50px;
+    top: -50px;
+  }
+
+  .visual-card-2 {
+    right: -50px;
+    top: 150px;
+  }
+
+  .visual-card-3 {
+    left: -10px;
+    bottom: 40px;
+  }
+
+  .card-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.8rem;
+  }
+
+  .card-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .about {
+    padding: 200px 100px;
+  }
+
   .about-image {
     width: 500px;
     height: 500px;
     font-size: 12rem;
   }
-  .about-content h2 { font-size: 5rem; }
-  .about-content p { font-size: 1.8rem; line-height: 2; }
-  .skill-tag { font-size: 1.3rem; padding: 15px 30px; }
 
-  .projects { padding: 200px 100px; }
-  .projects-container h2 { font-size: 5rem; }
-  .projects-subtitle { font-size: 1.8rem; margin-bottom: 100px; }
-  
+  .about-content h2 {
+    font-size: 5rem;
+  }
+
+  .about-content p {
+    font-size: 1.8rem;
+    line-height: 2;
+  }
+
+  .skill-tag {
+    font-size: 1.3rem;
+    padding: 15px 30px;
+  }
+
+  .projects {
+    padding: 200px 100px;
+  }
+
+  .projects-container h2 {
+    font-size: 5rem;
+  }
+
+  .projects-subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 100px;
+  }
+
   .project-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
   }
+
   .project-card {
     min-height: 550px;
     padding: 50px;
   }
-  .project-number { font-size: 6rem; }
-  .project-icon { width: 100px; height: 100px; font-size: 2.5rem; }
-  .project-info h3 { font-size: 2.5rem; }
-  .project-info p { font-size: 1.4rem; }
-  .project-tag { font-size: 1.1rem; }
 
-  .contact { padding: 200px 100px; }
-  .contact-container h2 { font-size: 5rem; }
-  .contact-grid { gap: 50px; }
-  .contact-card { padding: 80px 40px; }
-  .contact-icon { width: 100px; height: 100px; font-size: 2.5rem; }
-  .contact-card h3 { font-size: 2.2rem; }
-  .contact-card p { font-size: 1.5rem; }
+  .project-number {
+    font-size: 6rem;
+  }
+
+  .project-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 2.5rem;
+  }
+
+  .project-info h3 {
+    font-size: 2.5rem;
+  }
+
+  .project-info p {
+    font-size: 1.4rem;
+  }
+
+  .project-tag {
+    font-size: 1.1rem;
+  }
+
+  .contact {
+    padding: 200px 100px;
+  }
+
+  .contact-container h2 {
+    font-size: 5rem;
+  }
+
+  .contact-grid {
+    gap: 50px;
+  }
+
+  .contact-card {
+    padding: 80px 40px;
+  }
+
+  .contact-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 2.5rem;
+  }
+
+  .contact-card h3 {
+    font-size: 2.2rem;
+  }
+
+  .contact-card p {
+    font-size: 1.5rem;
+  }
 }
