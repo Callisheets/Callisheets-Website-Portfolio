@@ -120,6 +120,7 @@ body {
   }
 }
 
+
 /* =========================================
         3. LANDING PAGE / PRELOADER
     ========================================= */
@@ -144,13 +145,27 @@ body {
 }
 
 .start-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
   cursor: pointer;
-  position: relative;
   transition: transform 0.3s ease;
 }
 
 .start-button:hover {
   transform: scale(1.15);
+}
+
+.start-text {
+  bottom: 210px;
+  position: absolute;
+  color: #FFD166;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .start {
@@ -166,7 +181,7 @@ body {
 /* =========================================
         4. NAVIGATION
     ========================================= */
-nav { 
+nav {
   position: fixed;
   top: 0;
   width: 100%;
@@ -730,6 +745,10 @@ nav.show {
     font-size: 2.5rem;
   }
 
+  .start-text {
+    bottom: 170px;
+  }
+
   .about-container {
     grid-template-columns: 1fr;
     text-align: center;
@@ -757,6 +776,10 @@ nav.show {
   .hero-content {
     grid-template-columns: 1fr;
     gap: 60px;
+  }
+
+  .start-text {
+    bottom: 170px;
   }
 
   .hero-visual {
@@ -831,6 +854,7 @@ nav.show {
   .contact {
     padding: 80px 20px;
   }
+
   .contact-grid {
     grid-template-columns: 1fr;
   }
