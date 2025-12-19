@@ -764,6 +764,107 @@ nav.show {
   .skills {
     justify-content: center;
   }
+
+  .project-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 10px 40px 10px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .project-card {
+    flex: 0 0 280px;
+    min-height: 380px;
+    scroll-snap-align: center;
+    padding: 25px;
+    margin-bottom: 10px;
+  }
+
+  .project-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+
+  .project-info h3 {
+    font-size: 1.4rem;
+  }
+
+  .project-info p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .project-number {
+    font-size: 2.5rem;
+    top: 5px;
+    right: 15px;
+  }
+
+  .project-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .project-grid {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .contact {
+    padding: 50px 0;
+  }
+
+  .contact-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+
+  .contact-subtitle {
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+
+  .contact-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 20px 30px 20px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .contact-card {
+    flex: 0 0 280px;
+    padding: 30px 20px;
+    scroll-snap-align: center;
+  }
+
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+
+  .contact-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .contact-card p {
+    font-size: 0.9rem;
+  }
+
+  .contact-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .contact-grid {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -885,4 +986,3 @@ nav.show {
     font-size: 4rem;
   }
 }
-
