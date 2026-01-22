@@ -878,6 +878,7 @@ nav.show {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+  
 }
 
 @media (max-width: 768px) {
@@ -974,6 +975,21 @@ nav.show {
 
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .landing-page {
+    display: none !important;
+  }
+
+  .main-content {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    display: block !important;
+  }
+
+  nav {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
   }
 }
 
